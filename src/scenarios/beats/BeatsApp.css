@@ -1,0 +1,192 @@
+.beats-app {
+  min-height: 100vh;
+  background: #2a2a1a;
+  color: #f5f5dc;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.beats-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.road-lines {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+
+.road-lines.bottom {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.line {
+  width: 80px;
+  height: 6px;
+  background: #ffd700;
+  box-shadow: 0 0 10px #ffd70080;
+}
+
+.beats-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.beats-header h1 {
+  font-size: 32px;
+  color: #ffd700;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 20px #ffd70040;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #daa520;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.coming-soon-box {
+  background: #1a1a0a;
+  border: 3px solid #ffd700;
+  padding: 40px;
+  box-shadow: 0 0 30px #ffd70020;
+}
+
+.typewriter-text {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #f5f5dc;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.typewriter-text p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.typewriter-text .status {
+  margin-top: 20px;
+  color: #ffd700;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.cast-section {
+  margin-bottom: 40px;
+}
+
+.cast-section h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #ffd700;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.beat-poet {
+  display: grid;
+  grid-template-columns: 50px 200px 1fr;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #2a2a1a;
+  border-left: 3px solid #ffd700;
+}
+
+.beat-poet .emoji {
+  font-size: 24px;
+  text-align: center;
+}
+
+.beat-poet .name {
+  font-size: 15px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.beat-poet .vibe {
+  font-size: 13px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.scenario-description {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.scenario-description p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.route-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.route-section h3 {
+  font-size: 14px;
+  color: #ffd700;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.stops {
+  font-size: 14px;
+  color: #f5f5dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stops span {
+  padding: 8px 15px;
+  background: #2a2a1a;
+  border: 1px solid #ffd700;
+}
+
+.technical-note {
+  background: #0a0a0a;
+  padding: 15px;
+  border: 2px solid #444;
+  text-align: center;
+}
+
+.technical-note p {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .beats-header h1 {
+    font-size: 24px;
+  }
+
+  .beat-poet {
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+  }
+
+  .beat-poet .vibe {
+    grid-column: 1 / -1;
+    margin-top: 5px;
+  }
+
+  .coming-soon-box {
+    padding: 20px;
+  }
+}

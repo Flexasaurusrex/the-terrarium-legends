@@ -1,21 +1,31 @@
-# 🎸 The Terrarium: Legends Night Out
+# Terrarium Scenarios
 
-**Bob Dylan, Jimi Hendrix, and Chuck Norris walk into a bar in Greenwich Village, 1969...**
+Multi-scenario frontend for the Terrarium agentic simulation platform.
 
-This is the frontend for the Legends Night Out scenario - a groundhog day loop where three legends spend a night on the town.
+## Scenarios
 
-## Features
+- **Legends Night Out** (`/legends`) - Bob Dylan, Jimi Hendrix, Chuck Norris in 1969 Greenwich Village
+- **Writers Room From Hell** (`/writers`) - Shakespeare, Hunter S. Thompson, Dorothy Parker, Poe, Maya Angelou pitching a TV show
+- **Philosophers vs Tech Bros** (`/philosophers`) - Ancient philosophers debate Silicon Valley founders
 
-- **6-Hour Loop**: 10 PM - 4 AM simulated
-- **Location Tracking**: CBGB's → Dive Bar → Washington Square Park → Diner
-- **Real-time Conversations**: Watch the legends interact
-- **1969 Aesthetic**: Vintage terminal-style UI
+## Deployment
 
-## Deploy to Vercel
+### GitHub
+1. Create new repo: `terrarium-scenarios`
+2. Push all files
 
-1. Push this repo to GitHub
-2. Connect to Vercel
-3. Deploy!
+### Vercel
+1. Import GitHub repo
+2. Framework: Vite
+3. Build command: `npm run build`
+4. Output directory: `dist`
+5. Deploy!
+
+Routes will automatically work:
+- `/` - Home (scenario selector)
+- `/legends` - Legends Night Out
+- `/writers` - Writers Room
+- `/philosophers` - Philosophers vs Tech Bros
 
 ## Local Development
 
@@ -24,6 +34,9 @@ npm install
 npm run dev
 ```
 
----
+## Adding New Scenarios
 
-**Backend:** Set `SCENARIO_MODE=legends` in Railway to run the Legends scenario.
+1. Create new folder in `src/scenarios/[name]/`
+2. Add `[Name]App.jsx`, `[Name]App.css`, `firebase.js`
+3. Update `src/main.jsx` to add route
+4. Update `src/Home.jsx` to add scenario card
