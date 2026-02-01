@@ -1,0 +1,173 @@
+.revolutionary-app {
+  min-height: 100vh;
+  background: #1a0a0a;
+  color: #ff0000;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.revolutionary-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resistance-banner {
+  text-align: center;
+  padding: 15px;
+  background: #2a0000;
+  border: 3px solid #ff0000;
+  color: #ff0000;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.resistance-banner.bottom {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.revolutionary-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #ff0000;
+}
+
+.revolutionary-header h1 {
+  font-size: 32px;
+  color: #ff0000;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 20px #ff000080;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #cc0000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.coming-soon-box {
+  background: #0a0a0a;
+  border: 3px solid #ff0000;
+  padding: 40px;
+}
+
+.warning-box {
+  text-align: center;
+  padding: 20px;
+  background: #2a1a00;
+  border: 2px solid #ffa500;
+  color: #ffa500;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.warning-box p {
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+.warning-box p:first-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.revolutionaries {
+  margin-bottom: 40px;
+}
+
+.revolutionaries h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #ff0000;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.revolutionary-card {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #1a0a0a;
+  border: 2px solid #ff0000;
+  border-left: 5px solid #ff0000;
+}
+
+.revolutionary-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.revolutionary-name {
+  font-size: 18px;
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.revolutionary-method {
+  font-size: 13px;
+  color: #cc0000;
+  font-style: italic;
+}
+
+.scenario-description {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.scenario-description p {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.implementation-note {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #1a1a0a;
+  border: 2px solid #444;
+}
+
+.implementation-note h3 {
+  text-align: center;
+  font-size: 12px;
+  color: #ffa500;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.implementation-note p {
+  font-size: 12px;
+  color: #888;
+  margin: 8px 0;
+}
+
+.technical-note {
+  background: #0a0a0a;
+  padding: 15px;
+  border: 2px solid #444;
+  text-align: center;
+}
+
+.technical-note p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .revolutionary-header h1 {
+    font-size: 24px;
+  }
+
+  .coming-soon-box {
+    padding: 20px;
+  }
+}

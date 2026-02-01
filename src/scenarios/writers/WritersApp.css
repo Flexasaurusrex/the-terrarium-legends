@@ -1,0 +1,147 @@
+.writers-app {
+  min-height: 100vh;
+  background: #1a0a0a;
+  color: #f5f5dc;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.writers-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.film-strip {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-top: 4px solid #ff4444;
+  border-bottom: 4px solid #ff4444;
+}
+
+.film-strip.bottom {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.frame {
+  width: 60px;
+  height: 40px;
+  border: 3px solid #ff4444;
+  background: #2a1a1a;
+  box-shadow: inset 0 0 10px #ff444440;
+}
+
+.writers-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.writers-header h1 {
+  font-size: 32px;
+  color: #ff4444;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 20px #ff444480;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #cc3333;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.coming-soon-box {
+  background: #2a1a1a;
+  border: 3px solid #ff4444;
+  padding: 40px;
+  box-shadow: 0 0 30px #ff444420;
+}
+
+.typewriter {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff4444;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.typewriter p {
+  margin: 10px 0;
+}
+
+.cast-list {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cast-list h2 {
+  font-size: 16px;
+  color: #ff4444;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  border-bottom: 2px solid #ff444440;
+  padding-bottom: 10px;
+}
+
+.cast-member {
+  font-size: 16px;
+  color: #f5f5dc;
+  margin: 12px 0;
+  padding: 8px;
+  background: #1a0a0a;
+  border-left: 3px solid #ff4444;
+}
+
+.scenario-description {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.scenario-description p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.technical-note {
+  background: #1a0a0a;
+  padding: 20px;
+  border: 2px solid #444;
+  text-align: center;
+}
+
+.technical-note p {
+  margin: 8px 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.technical-note p:first-child {
+  color: #ff4444;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .writers-header h1 {
+    font-size: 24px;
+  }
+
+  .coming-soon-box {
+    padding: 20px;
+  }
+
+  .film-strip {
+    overflow-x: auto;
+  }
+
+  .frame {
+    width: 50px;
+    height: 30px;
+  }
+}
