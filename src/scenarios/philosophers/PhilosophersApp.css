@@ -1,0 +1,203 @@
+.philosophers-app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a0a 100%);
+  color: #f5f5dc;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.philosophers-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.philosophers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-section {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid;
+}
+
+.header-section.ancient {
+  border-color: #cd853f;
+  background: linear-gradient(135deg, #2a1a0a, #1a1a0a);
+}
+
+.header-section.modern {
+  border-color: #00ff88;
+  background: linear-gradient(135deg, #0a2a1a, #0a1a1a);
+}
+
+.header-section h2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.header-section.ancient h2 {
+  color: #cd853f;
+}
+
+.header-section.modern h2 {
+  color: #00ff88;
+}
+
+.philosophers-header h1 {
+  font-size: 42px;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 0 20px #ffffff80;
+  flex-shrink: 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.coming-soon-box {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  padding: 40px;
+}
+
+.terminal-text {
+  font-family: 'Courier New', monospace;
+  color: #00ff88;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.terminal-text p {
+  margin: 8px 0;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.team {
+  flex: 1;
+  min-width: 250px;
+  padding: 30px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.team.ancient {
+  border-color: #cd853f;
+  background: linear-gradient(135deg, #2a1a0a, #1a1a0a);
+}
+
+.team.modern {
+  border-color: #00ff88;
+  background: linear-gradient(135deg, #0a2a1a, #0a1a1a);
+}
+
+.team h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+
+.team.ancient h3 {
+  color: #cd853f;
+  border-color: #cd853f40;
+}
+
+.team.modern h3 {
+  color: #00ff88;
+  border-color: #00ff8840;
+}
+
+.team-member {
+  font-size: 14px;
+  margin: 12px 0;
+  padding: 8px;
+  background: #0a0a0a;
+}
+
+.vs-divider {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 20px #ffffff80;
+  flex-shrink: 0;
+}
+
+.scenario-description {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.scenario-description p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.technical-note {
+  background: #0a0a0a;
+  padding: 20px;
+  border: 2px solid #333;
+  text-align: center;
+}
+
+.technical-note p {
+  margin: 8px 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.technical-note p:first-child {
+  color: #00ff88;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .philosophers-header {
+    flex-direction: column;
+  }
+
+  .philosophers-header h1 {
+    font-size: 32px;
+  }
+
+  .teams {
+    flex-direction: column;
+  }
+
+  .vs-divider {
+    transform: rotate(90deg);
+    margin: 20px 0;
+  }
+
+  .coming-soon-box {
+    padding: 20px;
+  }
+}
